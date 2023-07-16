@@ -42,7 +42,7 @@ fun DrawScope.drawParticle(state: ParticlesModel.State, angleOffset: Float) {
 
 fun Long.toMinuteRadians() =
     PI * ((TimeUnit.MILLISECONDS.toMinutes(this) % 60
-            + ((TimeUnit.MILLISECONDS.toSeconds(this) % 60) / 60f)) / 30f) - PI_DIV_2
+            + ((TimeUnit.MILLISECONDS.toSeconds(this) % 60) / 60f)) / 30f) + PI_DIV_2
 
 fun Long.toHourRadians(systemClock: SystemClock) =
     PI * ((systemClock.getHour()
