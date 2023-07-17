@@ -18,6 +18,7 @@ import com.deepshooter.composeclock.ui.components.ClockMinutesHand
 import com.deepshooter.composeclock.ui.components.ClockParticles
 import com.deepshooter.composeclock.ui.components.ClockSecondsHand
 import com.deepshooter.composeclock.ui.components.ClockSphere
+import com.deepshooter.composeclock.ui.theme.BlueGrey
 import com.deepshooter.composeclock.ui.theme.ComposeClockTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -34,7 +35,7 @@ class MainActivity : ComponentActivity() {
                 Clock(
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(Color.Black)
+                        .background(BlueGrey)
                 )
             }
         }
